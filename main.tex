@@ -1,11 +1,18 @@
-\documentclass[a5paper, 12pt]{memoir}
+\documentclass[a4paper, 12pt]{memoir}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
-\medievalpage
+\renewcommand{\rmdefault}{pbk}
 
 \begin{document}
+\include{info}
+\newpage
+\mbox{}
+\newpage
 \include{intro}
+\newpage
+\mbox{}
+\newpage
 \include{chapter01}
 \include{chapter02}
 \include{chapter03}
