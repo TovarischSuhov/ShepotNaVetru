@@ -1,16 +1,35 @@
-\documentclass[a4paper, 12pt]{memoir}
+\documentclass[a4paper, openany, 12pt]{memoir}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \renewcommand{\rmdefault}{pbk}
+\medievalpage
+
 
 \begin{document}
-\include{info}
 \newpage
+\thispagestyle{empty}
 \mbox{}
 \newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\include{dedication}
+\newpage
+\thispagestyle{empty}
+\include{output}
+\newpage
+\thispagestyle{empty}
+\include{info}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
 \include{intro}
 \newpage
+\thispagestyle{empty}
 \mbox{}
 \newpage
 \include{chapter01}
@@ -34,4 +53,5 @@
 \include{chapter19}
 \include{chapter20}
 \include{chapter21}
+\tableofcontents
 \end{document}
