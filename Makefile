@@ -11,7 +11,7 @@ pdf: prepare
 
 book: pdf
 	pdf2ps "$(BUILDDIR)/main.pdf" "$(BUILDDIR)/main.ps"
-	psbook -s 16 "$(BUILDDIR)/main.ps" | psnup -pa4 -2 > "$(BUILDDIR)/main_book.ps"
+	psbook -s 16 "$(BUILDDIR)/main.ps" | psnup -2 > "$(BUILDDIR)/main_book.ps"
 	ps2pdf "$(BUILDDIR)/main_book.ps" "$(BUILDDIR)/shepot.pdf"
 
 clean:
